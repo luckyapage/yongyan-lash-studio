@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>詠·妍美學工作室 ｜ 桃園觀音 美睫嫁接．完全預約制</title>
+<meta name="description" content="詠·妍美學工作室，桃園市觀音區新村路二段 109 號。完全預約制的美睫嫁接工作室，一次只服務一位客人，單次施作約 1.5～2.5 小時。預約請加 LINE @742cngix。">
+<meta name="theme-color" content="#F7F3EE">
+<link rel="canonical" href="./">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:title" content="詠·妍美學工作室 ｜ 桃園觀音 美睫嫁接">
+<meta property="og:description" content="完全預約制的美睫嫁接工作室，一次只服務一位客人。桃園市觀音區新村路二段 109 號。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@500;700&display=swap" rel="stylesheet">
+<style>
+/* ── 1. 色票與字型 ───────────────────────────────────────────── */
+:root{
+  --paper:#F7F3EE;      /* 底色（暖白紙） */
+  --paper-2:#EFE8E0;    /* 次底色 */
+  --ink:#201C1A;        /* 主要文字／深色區塊 */
+  --ink-2:#5A504A;      /* 內文 */
+  --ink-3:#8C8077;      /* 說明、標籤 */
+  --line:#E4DBD1;       /* 細線 */
+  --line-2:#D8CCC0;     /* 較深的細線、外框 */
+  --accent:#A8746A;     /* 重點色（陶土） */
+  --on-accent:#FFFCF8;  /* 重點色上的文字 */
+  --sans:"Noto Sans TC",system-ui,"Segoe UI",sans-serif;
+  --serif:"Noto Serif TC","Songti TC","PMingLiU",serif;
+  --pad:clamp(20px,4vw,48px);       /* 左右留白 */
+  --sec:clamp(56px,6vw,96px);       /* 段落上下留白 */
+}
+
+/* ── 2. 基本設定 ─────────────────────────────────────────────── */
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;background:var(--paper);color:var(--ink);
+  font-family:var(--sans);font-size:16px;line-height:1.9;
+  -webkit-font-smoothing:antialiased;text-wrap:pretty;overflow-x:hidden;
+}
+h1,h2,h3{font-family:var(--serif);text-wrap:balance;margin:0}
+p{margin:0}
+a{color:inherit;text-decoration:none;transition:color .18s,background-color .18s,border-color .18s}
+img,svg{display:block;max-width:100%}
+.wrap{max-width:1120px;margin:0 auto;padding-left:var(--pad);padding-right:var(--pad)}
+.eyebrow{font-size:13px;letter-spacing:.28em;color:var(--accent);font-weight:500}
+.h2{font-size:clamp(26px,3.4vw,40px);font-weight:700;margin-top:16px}
+.dot{color:var(--accent);padding:0 1px}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+
+/* 按鈕 */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;
+  padding:16px 28px;border-radius:999px;font-size:16px;font-weight:500;white-space:nowrap}
+.btn-solid{background:var(--accent);color:var(--on-accent)}
+.btn-solid:hover{background:var(--ink);color:var(--on-accent)}
+.btn-line{border:1px solid var(--line-2);padding:15px 26px}
+.btn-line:hover{background:var(--paper-2)}
+
+/* ── 3. 頁首 ─────────────────────────────────────────────────── */
+.site-head{position:sticky;top:0;z-index:40;background:rgba(247,243,238,.92);
+  -webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.site-head .wrap{height:74px;display:flex;align-items:center;gap:clamp(16px,3vw,36px)}
+.brand{display:flex;align-items:baseline;gap:8px;white-space:nowrap}
+.brand b{font-family:var(--serif);font-size:22px;font-weight:700;letter-spacing:.04em}
+.brand span{font-size:12.5px;letter-spacing:.22em;color:var(--ink-3)}
+.nav{display:flex;gap:clamp(14px,2.2vw,30px);margin-left:auto;font-size:14.5px;letter-spacing:.04em}
+.nav a{padding:12px 0}
+.nav a:hover{color:var(--accent)}
+.head-cta{background:var(--accent);color:var(--on-accent);font-size:14.5px;font-weight:500;
+  letter-spacing:.04em;padding:13px 22px;border-radius:999px;white-space:nowrap}
+.head-cta:hover{background:var(--ink);color:var(--on-accent)}
+
+/* ── 4. 首屏 ─────────────────────────────────────────────────── */
+.hero{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+  gap:clamp(36px,5vw,64px);align-items:center;
+  padding-top:clamp(48px,6vw,92px);padding-bottom:var(--sec)}
+.hero h1{font-size:clamp(38px,5.4vw,66px);font-weight:700;line-height:1.32;letter-spacing:.01em;margin-top:22px}
+.hero-lead{margin-top:26px;max-width:23em;font-size:16.5px;color:var(--ink-2)}
+.hero-btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
+.hero-addr{margin-top:30px;font-size:14px;color:var(--ink-3);letter-spacing:.02em}
+.art{position:relative;aspect-ratio:4/5;overflow:hidden;background:var(--paper-2);
+  background-image:repeating-linear-gradient(45deg,rgba(255,255,255,.5) 0 1px,transparent 1px 7px)}
+.art-glow{position:absolute;left:12%;top:14%;width:76%;aspect-ratio:1/1;border-radius:50%;
+  background:radial-gradient(circle,rgba(255,255,255,.85) 0 40%,rgba(255,255,255,0) 72%)}
+.art svg{position:absolute;left:-8%;bottom:6%;width:118%}
+.lash-back{stroke:#CFC0B2;stroke-width:1.1}
+.lash-front{stroke:var(--accent);stroke-width:1.5}
+.art-tag{position:absolute;right:18px;bottom:16px;font-size:11.5px;letter-spacing:.2em;color:#A2958A}
+
+/* ── 5. 施作前須知（深色區） ──────────────────────────────────── */
+.notice{background:var(--ink);color:var(--paper)}
+.notice .wrap{padding-top:clamp(56px,6vw,100px);padding-bottom:clamp(56px,6vw,100px)}
+.notice h2{font-size:clamp(28px,3.6vw,42px);font-weight:700;line-height:1.45;margin-top:18px}
+.notice-lead{margin-top:18px;max-width:34em;font-size:16px;color:rgba(247,243,238,.66)}
+.notice-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:clamp(28px,3.5vw,48px);margin-top:clamp(40px,5vw,64px)}
+.note{display:flex;flex-direction:column;gap:14px;padding-top:26px;border-top:1px solid rgba(247,243,238,.22)}
+.note-num{font-family:var(--serif);font-size:34px;font-weight:500;line-height:1;color:var(--accent)}
+.note h3{font-size:20px;font-weight:700;line-height:1.6}
+.note p{font-size:15.5px;line-height:1.95;color:rgba(247,243,238,.7)}
+
+/* ── 6. 作品（連到 IG） ──────────────────────────────────────── */
+.works{padding-top:var(--sec);padding-bottom:var(--sec)}
+.works-lead{margin-top:18px;max-width:30em;font-size:15.5px;color:var(--ink-2)}
+.ig-card{display:flex;align-items:center;gap:clamp(16px,2.5vw,28px);margin-top:32px;
+  padding:clamp(24px,3vw,34px) clamp(22px,3vw,36px);border:1px solid var(--line-2)}
+.ig-card:hover{background:var(--paper-2)}
+.ig-card svg{flex-shrink:0;color:var(--accent)}
+.ig-card .arrow{margin-left:auto}
+.ig-text{display:flex;flex-direction:column;gap:2px;min-width:0}
+.ig-text strong{font-family:var(--serif);font-size:clamp(20px,2.4vw,26px);font-weight:700;letter-spacing:.02em;word-break:break-all}
+.ig-text span{font-size:14.5px;color:var(--ink-3)}
+
+/* ── 7. 服務項目 ─────────────────────────────────────────────── */
+.service{background:var(--paper-2)}
+.service .wrap{padding-top:var(--sec);padding-bottom:var(--sec)}
+.service-lead{margin-top:18px;max-width:32em;font-size:15.5px;color:var(--ink-2)}
+.price-list{margin-top:34px;border-top:1px solid var(--line-2)}
+.price-row{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;
+  gap:12px;padding:24px 4px;border-bottom:1px solid var(--line-2)}
+.price-row strong{font-family:var(--serif);font-size:19px;font-weight:700}
+.price-row p{margin-top:4px;font-size:14.5px;color:var(--ink-3)}
+.price-tag{font-size:15px;letter-spacing:.06em;color:var(--accent);
+  border:1px solid var(--line-2);padding:6px 14px;border-radius:999px;white-space:nowrap}
+
+/* ── 8. 預約 ─────────────────────────────────────────────────── */
+.book{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+  gap:clamp(36px,5vw,64px);padding-top:var(--sec);padding-bottom:var(--sec)}
+.book-lead{margin-top:20px;max-width:26em;font-size:16px;color:var(--ink-2)}
+.book-lead strong{font-weight:700}
+.info{margin-top:34px;border-top:1px solid var(--line)}
+.info div{display:flex;gap:20px;padding:18px 2px;border-bottom:1px solid var(--line)}
+.info dt,.info .k{min-width:5.5em;font-size:14px;color:var(--ink-3);letter-spacing:.1em}
+.info a{font-size:16px;font-weight:500}
+.info a:hover{color:var(--accent)}
+.info .v{font-size:16px}
+/* 外框負責撐高（跟左欄同高），iframe 絕對定位鋪滿 —— iframe 是替換元素，
+   直接放在 grid 裡不會被 stretch 拉長，所以要包一層。 */
+.map{position:relative;min-height:340px;border:1px solid var(--line-2);background:var(--paper-2)}
+.map iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+
+/* ── 9. 頁尾 ─────────────────────────────────────────────────── */
+.site-foot{background:var(--ink);color:rgba(247,243,238,.62)}
+.site-foot .wrap{padding-top:44px;padding-bottom:44px;display:flex;flex-wrap:wrap;
+  align-items:center;justify-content:space-between;gap:18px;font-size:14px}
+.site-foot b{font-family:var(--serif);font-size:18px;font-weight:500;color:var(--paper);letter-spacing:.04em}
+
+/* ── 10. 手機 ────────────────────────────────────────────────── */
+@media (max-width:719px){
+  .nav{display:none}
+  .site-head .wrap{height:60px}
+  .brand b{font-size:19px}
+  .brand span{font-size:11.5px;letter-spacing:.18em}
+  .head-cta{margin-left:auto;font-size:13.5px;padding:11px 18px}
+  .hero-btns{flex-direction:column;align-items:stretch}
+  .hero-btns .btn{width:100%}
+  .info div{gap:14px}
+  .info dt,.info .k{min-width:5em;font-size:13.5px;letter-spacing:.08em}
+}
+</style>
+</head>
+<body>
+
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="#top">
+      <b>詠<span class="dot">·</span>妍</b>
+      <span>美學工作室</span>
+    </a>
+    <nav class="nav">
+      <a href="#notice">施作前須知</a>
+      <a href="#works">作品</a>
+      <a href="#service">服務項目</a>
+      <a href="#book">預約</a>
+    </nav>
+    <a class="head-cta" href="https://line.me/R/ti/p/@742cngix">LINE 預約</a>
+  </div>
+</header>
+
+<main>
+
+  <!-- 首屏 -->
+  <section class="wrap hero" id="top">
+    <div>
+      <p class="eyebrow">桃園觀音 ／ 完全預約制</p>
+      <h1>一次只接一位。<br>躺下來，<br>其餘交給我。</h1>
+      <p class="hero-lead">嫁接一次約 1.5～2.5 小時。不趕時間、不推銷；做完起身照過鏡子，確認滿意再走。</p>
+      <div class="hero-btns">
+        <a class="btn btn-solid" href="https://line.me/R/ti/p/@742cngix">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5c0 4.1-4 7.4-9 7.4-.9 0-1.8-.1-2.6-.3L4 21l1.3-3.6C3.9 16.1 3 13.9 3 11.5 3 7.4 7 4.1 12 4.1s9 3.3 9 7.4z"/></svg>
+          加 LINE 預約　@742cngix
+        </a>
+        <a class="btn btn-line" href="https://www.instagram.com/mo.742cngix/">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1" fill="currentColor" stroke="none"/></svg>
+          看 IG 作品
+        </a>
+      </div>
+      <p class="hero-addr">桃園市觀音區新村路二段 109 號</p>
+    </div>
+
+    <div class="art">
+      <div class="art-glow"></div>
+      <svg viewBox="0 0 520 400" fill="none" stroke-linecap="round" aria-hidden="true">
+        <defs>
+          <g id="lash-fan">
+            <path d="M24 306C168 362 336 346 500 228" stroke-width="2.4"/>
+            <path d="M39.2 311.6Q48.9 282.9 48.4 258"/><path d="M55.2 316.9Q68.5 279 67.2 246"/><path d="M71.3 321.5Q88 275.6 85.7 235.4"/><path d="M87.6 325.6Q107.5 272.7 104 226.1"/><path d="M104.1 329.1Q126.9 270 122.1 217.9"/><path d="M120.7 332Q146.2 267.8 139.9 210.9"/><path d="M137.5 334.2Q165.4 265.8 157.6 205.1"/><path d="M154.4 335.8Q184.4 264.1 175 200.3"/><path d="M171.4 336.8Q203.2 262.7 192.2 196.6"/><path d="M188.5 337.1Q221.7 261.5 209.2 194"/><path d="M205.8 336.7Q240.1 260.5 226.1 192.3"/><path d="M223.1 335.7Q258.1 259.7 242.9 191.4"/><path d="M240.6 334.1Q275.9 258.9 259.7 191.3"/><path d="M258.1 331.7Q293.5 258.1 276.3 191.9"/><path d="M275.7 328.7Q310.8 257.3 293 193"/><path d="M293.4 324.9Q327.9 256.4 309.6 194.6"/><path d="M311.2 320.4Q344.7 255.3 326.2 196.4"/><path d="M328.9 315.3Q361.2 253.9 342.9 198.4"/><path d="M346.8 309.4Q377.6 252.2 359.6 200.4"/><path d="M364.7 302.7Q393.7 250.1 376.4 202.3"/><path d="M382.6 295.3Q409.6 247.5 393.2 203.9"/><path d="M400.5 287.2Q425.4 244.3 410 205"/><path d="M418.4 278.3Q441 240.4 426.9 205.6"/><path d="M436.4 268.6Q456.5 235.7 443.8 205.4"/><path d="M454.3 258.2Q472 230.2 460.8 204.2"/><path d="M472.2 247Q487.4 223.6 477.7 201.8"/><path d="M490.2 235Q503 215.8 494.8 197.7"/>
+          </g>
+        </defs>
+        <use class="lash-back" href="#lash-fan" transform="translate(-9 16)"/>
+        <use class="lash-front" href="#lash-fan"/>
+      </svg>
+      <span class="art-tag">EYELASH EXTENSION</span>
+    </div>
+  </section>
+
+  <!-- 施作前須知 -->
+  <section class="notice" id="notice">
+    <div class="wrap">
+      <p class="eyebrow">施作前須知</p>
+      <h2>來之前，先確認這三件事</h2>
+      <p class="notice-lead">這三點會直接影響嫁接的成果與眼睛的安全。有任何一項不確定，先在 LINE 上告訴我，我們一起想辦法。</p>
+
+      <div class="notice-grid">
+        <div class="note">
+          <span class="note-num">01</span>
+          <h3>當天眼睛狀況良好</h3>
+          <p>沒有眼疾、過敏或其他眼部不適。眼睛正在發炎、紅腫或不舒服時，先把身體顧好，時段可以再約。</p>
+        </div>
+        <div class="note">
+          <span class="note-num">02</span>
+          <h3>六個月內未做過角蛋白／睫毛管理</h3>
+          <p>做過角蛋白或睫毛管理的睫毛，捲翹角度與毛的狀態都被改變過，嫁接不容易附著。建議滿六個月、睫毛自然代謝過一輪之後再接。</p>
+        </div>
+        <div class="note">
+          <span class="note-num">03</span>
+          <h3>留 1.5～2.5 小時，而且能久躺</h3>
+          <p>全程需要閉著眼睛平躺，中途頻繁起身會拉長施作時間。行程請排鬆一點，不要接在趕車或趕下一場之前。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 作品：連到 IG -->
+  <section class="wrap works" id="works">
+    <p class="eyebrow">作品</p>
+    <h2 class="h2">作品都放在 IG</h2>
+    <p class="works-lead">最近做的款式都更新在 Instagram，翻起來比較快。看到喜歡的直接截圖傳 LINE 給我，我們照著討論。</p>
+
+    <a class="ig-card" href="https://www.instagram.com/mo.742cngix/">
+      <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1" fill="currentColor" stroke="none"/></svg>
+      <span class="ig-text">
+        <strong>@mo.742cngix</strong>
+        <span>在 Instagram 看全部作品</span>
+      </span>
+      <svg class="arrow" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h13"/><path d="M12.5 6l5.5 6-5.5 6"/></svg>
+    </a>
+  </section>
+
+  <!-- 服務項目 -->
+  <section class="service" id="service">
+    <div class="wrap">
+      <p class="eyebrow">服務項目</p>
+      <h2 class="h2">品項與價格</h2>
+      <p class="service-lead">以下品項與價格<strong>尚未提供</strong>，先把版位留好。實際要放的項目與金額告訴我，直接替換文字即可。</p>
+
+      <div class="price-list">
+        <div class="price-row">
+          <div><strong>［項目一］單根嫁接</strong><p>［說明文字：根數、適合的眼型或風格］</p></div>
+          <span class="price-tag">［價格待補］</span>
+        </div>
+        <div class="price-row">
+          <div><strong>［項目二］濃密嫁接</strong><p>［說明文字］</p></div>
+          <span class="price-tag">［價格待補］</span>
+        </div>
+        <div class="price-row">
+          <div><strong>［項目三］回補</strong><p>［說明文字：多久內回補、剩餘根數怎麼算］</p></div>
+          <span class="price-tag">［價格待補］</span>
+        </div>
+        <div class="price-row">
+          <div><strong>［項目四］卸睫</strong><p>［說明文字：他店施作是否可卸］</p></div>
+          <span class="price-tag">［價格待補］</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 預約 -->
+  <section class="wrap book" id="book">
+    <div>
+      <p class="eyebrow">預約</p>
+      <h2 class="h2">完全預約制</h2>
+      <p class="book-lead">沒有固定營業時間，時段依 LINE 上的回覆為準。傳訊息時請一起告訴我：<strong>想做的款式、方便的日期時段</strong>，以及<strong>最近半年是否做過角蛋白或睫毛管理</strong>。</p>
+
+      <div class="info">
+        <div><span class="k">LINE</span><a href="https://line.me/R/ti/p/@742cngix">@742cngix</a></div>
+        <div><span class="k">Instagram</span><a href="https://www.instagram.com/mo.742cngix/">mo.742cngix</a></div>
+        <div><span class="k">地址</span><span class="v">桃園市觀音區新村路二段 109 號</span></div>
+        <div><span class="k">時間</span><span class="v">預約制，時段以 LINE 回覆為準</span></div>
+      </div>
+
+      <a class="btn btn-solid" style="margin-top:32px;padding:17px 32px;font-size:16.5px" href="https://line.me/R/ti/p/@742cngix">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5c0 4.1-4 7.4-9 7.4-.9 0-1.8-.1-2.6-.3L4 21l1.3-3.6C3.9 16.1 3 13.9 3 11.5 3 7.4 7 4.1 12 4.1s9 3.3 9 7.4z"/></svg>
+        加 LINE 詢問時段
+      </a>
+    </div>
+
+    <!-- 地圖：以地址搜尋嵌入，不需要 API 金鑰。要換地點只要改 q= 後面那串（網址編碼過的地址）。 -->
+    <div class="map">
+      <iframe
+        title="詠·妍美學工作室位置地圖"
+        src="https://www.google.com/maps?q=%E6%A1%83%E5%9C%92%E5%B8%82%E8%A7%80%E9%9F%B3%E5%8D%80%E6%96%B0%E6%9D%91%E8%B7%AF%E4%BA%8C%E6%AE%B5109%E8%99%9F&amp;hl=zh-TW&amp;z=17&amp;output=embed"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        allowfullscreen></iframe>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <b>詠<span class="dot">·</span>妍　美學工作室</b>
+    <span>桃園市觀音區新村路二段 109 號　／　LINE @742cngix　／　IG mo.742cngix</span>
+  </div>
+</footer>
+
+</body>
+</html>
