@@ -116,14 +116,24 @@ img,svg{display:block;max-width:100%}
 /* ── 7. 服務項目 ─────────────────────────────────────────────── */
 .service{background:var(--paper-2)}
 .service .wrap{padding-top:var(--sec);padding-bottom:var(--sec)}
-.service-lead{margin-top:18px;max-width:32em;font-size:15.5px;color:var(--ink-2)}
+/* 新開幕優惠帶 */
+.promo{margin-top:28px;background:var(--ink);color:var(--paper);
+  padding:clamp(24px,3vw,32px) clamp(22px,3vw,34px);display:flex;flex-direction:column;gap:8px}
+.promo-label{font-size:12.5px;letter-spacing:.24em;color:var(--accent);font-weight:500}
+.promo-head{font-family:var(--serif);font-size:clamp(23px,3.2vw,32px);font-weight:700;
+  line-height:1.4;letter-spacing:.02em}
+.promo-note{font-size:14.5px;line-height:1.85;color:rgba(247,243,238,.72)}
+/* 價目表 */
 .price-list{margin-top:34px;border-top:1px solid var(--line-2)}
 .price-row{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;
-  gap:12px;padding:24px 4px;border-bottom:1px solid var(--line-2)}
+  gap:8px 20px;padding:22px 4px;border-bottom:1px solid var(--line-2)}
 .price-row strong{font-family:var(--serif);font-size:19px;font-weight:700}
-.price-row p{margin-top:4px;font-size:14.5px;color:var(--ink-3)}
-.price-tag{font-size:15px;letter-spacing:.06em;color:var(--accent);
-  border:1px solid var(--line-2);padding:6px 14px;border-radius:999px;white-space:nowrap}
+.price{font-family:var(--serif);font-size:21px;font-weight:700;letter-spacing:.02em;white-space:nowrap}
+.price-soon{font-size:14.5px;color:var(--ink-3)}
+.vip{margin-top:26px;display:flex;flex-wrap:wrap;align-items:center;gap:12px;
+  font-size:15px;color:var(--ink-2)}
+.vip-tag{font-size:12.5px;letter-spacing:.18em;color:var(--accent);
+  border:1px solid var(--line-2);padding:5px 12px;border-radius:999px}
 
 /* ── 8. 預約 ─────────────────────────────────────────────────── */
 .book{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
@@ -264,26 +274,22 @@ img,svg{display:block;max-width:100%}
     <div class="wrap">
       <p class="eyebrow">服務項目</p>
       <h2 class="h2">品項與價格</h2>
-      <p class="service-lead">以下品項與價格<strong>尚未提供</strong>，先把版位留好。實際要放的項目與金額告訴我，直接替換文字即可。</p>
+      <div class="promo">
+        <span class="promo-label">新開幕優惠</span>
+        <strong class="promo-head">9/7 ～ 11/7　全品項半價</strong>
+        <p class="promo-note">優惠期間需配合拍照 PO 文，通常只會拍到鼻子以上。</p>
+      </div>
 
       <div class="price-list">
-        <div class="price-row">
-          <div><strong>［項目一］單根嫁接</strong><p>［說明文字：根數、適合的眼型或風格］</p></div>
-          <span class="price-tag">［價格待補］</span>
-        </div>
-        <div class="price-row">
-          <div><strong>［項目二］濃密嫁接</strong><p>［說明文字］</p></div>
-          <span class="price-tag">［價格待補］</span>
-        </div>
-        <div class="price-row">
-          <div><strong>［項目三］回補</strong><p>［說明文字：多久內回補、剩餘根數怎麼算］</p></div>
-          <span class="price-tag">［價格待補］</span>
-        </div>
-        <div class="price-row">
-          <div><strong>［項目四］卸睫</strong><p>［說明文字：他店施作是否可卸］</p></div>
-          <span class="price-tag">［價格待補］</span>
-        </div>
+        <div class="price-row"><strong>單根自然裸妝款</strong><span class="price">$900</span></div>
+        <div class="price-row"><strong>3D 人魚星織</strong><span class="price">$900</span></div>
+        <div class="price-row"><strong>6D 潘朵拉眼線妝感</strong><span class="price">$1,000</span></div>
+        <div class="price-row"><strong>6D 雲朵羽輕柔款</strong><span class="price">$1,000</span></div>
+        <div class="price-row"><strong>非本店卸睫</strong><span class="price">$200</span></div>
+        <div class="price-row"><strong>設計款</strong><span class="price-soon">還在學習中，敬請期待</span></div>
       </div>
+
+      <p class="vip"><span class="vip-tag">VIP</span>回流成為正式客人，一年期間內消費可享 9 折。</p>
     </div>
   </section>
 
